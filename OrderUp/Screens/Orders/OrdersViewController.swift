@@ -15,6 +15,8 @@ class OrdersViewController: UIViewController, OrderTableViewCellDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let dummyOrder = Order(name: "Alan Scarpa", phoneNumber: "7324035761")
+        OrderManager.sharedManager.orders.append(dummyOrder)
         setUpTableView()
     }
     
