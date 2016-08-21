@@ -17,8 +17,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlA-La-Ju6">
-                    <rect key="frame" x="245" y="279" width="110" height="42"/>
+                    <rect key="frame" x="244" y="277" width="111" height="45"/>
                     <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                     <inset key="contentEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
                     <state key="normal" title="ADD ORDER"/>
                     <connections>
@@ -26,7 +27,8 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3z6-aI-3U5">
-                    <rect key="frame" x="276" y="345" width="48" height="30"/>
+                    <rect key="frame" x="277" y="346.5" width="46" height="33"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                     <state key="normal" title="Cancel">
                         <color key="titleColor" red="1" green="0.0" blue="0.17586349179999999" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
@@ -35,22 +37,22 @@
                     </connections>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k2y-IK-FLF">
-                    <rect key="frame" x="100" y="167" width="400" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <rect key="frame" x="75" y="167" width="450" height="30"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fey-Nj-i8V">
-                    <rect key="frame" x="100" y="110" width="400" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fey-Nj-i8V">
+                    <rect key="frame" x="75" y="110" width="450" height="30"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                 </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="3z6-aI-3U5" firstAttribute="top" secondItem="VlA-La-Ju6" secondAttribute="bottom" constant="24" id="1Li-of-oFh"/>
-                <constraint firstAttribute="trailing" secondItem="Fey-Nj-i8V" secondAttribute="trailing" constant="100" id="8kK-zg-AgV"/>
+                <constraint firstAttribute="trailing" secondItem="Fey-Nj-i8V" secondAttribute="trailing" constant="75" id="8kK-zg-AgV"/>
                 <constraint firstItem="k2y-IK-FLF" firstAttribute="top" secondItem="Fey-Nj-i8V" secondAttribute="bottom" constant="27" id="G1k-Jc-EjA"/>
-                <constraint firstItem="Fey-Nj-i8V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="YXw-QX-tVU"/>
+                <constraint firstItem="Fey-Nj-i8V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="75" id="YXw-QX-tVU"/>
                 <constraint firstItem="VlA-La-Ju6" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="eGv-td-G2L"/>
                 <constraint firstItem="k2y-IK-FLF" firstAttribute="width" secondItem="Fey-Nj-i8V" secondAttribute="width" id="fne-O9-9Mu"/>
                 <constraint firstItem="k2y-IK-FLF" firstAttribute="centerX" secondItem="Fey-Nj-i8V" secondAttribute="centerX" id="n87-7k-opy"/>
