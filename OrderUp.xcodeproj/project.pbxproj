@@ -85,11 +85,11 @@
 		459626071D6A210600B1C43E /* OrderUp */ = {
 			isa = PBXGroup;
 			children = (
+				459626081D6A210600B1C43E /* AppDelegate.swift */,
+				459626221D6A398D00B1C43E /* APIKeys.swift */,
 				459626331D6A42C800B1C43E /* Extensions */,
 				459626301D6A403A00B1C43E /* Utilities */,
 				4596262D1D6A3FC100B1C43E /* Models */,
-				459626081D6A210600B1C43E /* AppDelegate.swift */,
-				459626221D6A398D00B1C43E /* APIKeys.swift */,
 				4596261C1D6A251100B1C43E /* Screens */,
 				4596260E1D6A210600B1C43E /* Main.storyboard */,
 				459626111D6A210600B1C43E /* Assets.xcassets */,
