@@ -15,6 +15,11 @@
 		459626201D6A258B00B1C43E /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4596261E1D6A258B00B1C43E /* OrderTableViewCell.swift */; };
 		459626211D6A258B00B1C43E /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4596261F1D6A258B00B1C43E /* OrderTableViewCell.xib */; };
 		459626231D6A398D00B1C43E /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459626221D6A398D00B1C43E /* APIKeys.swift */; };
+		4596262B1D6A3E6E00B1C43E /* NewOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459626291D6A3E6E00B1C43E /* NewOrderViewController.swift */; };
+		4596262C1D6A3E6E00B1C43E /* NewOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4596262A1D6A3E6E00B1C43E /* NewOrderViewController.xib */; };
+		4596262F1D6A3FDC00B1C43E /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4596262E1D6A3FDC00B1C43E /* Order.swift */; };
+		459626321D6A404E00B1C43E /* OrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459626311D6A404E00B1C43E /* OrderManager.swift */; };
+		459626351D6A42F000B1C43E /* UIAlertController+OrderUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459626341D6A42F000B1C43E /* UIAlertController+OrderUp.swift */; };
 		F06D39C819521E358487320D /* Pods_OrderUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B4451463125A75CC96F1A5 /* Pods_OrderUp.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +37,11 @@
 		4596261E1D6A258B00B1C43E /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		4596261F1D6A258B00B1C43E /* OrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
 		459626221D6A398D00B1C43E /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		459626291D6A3E6E00B1C43E /* NewOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewOrderViewController.swift; sourceTree = "<group>"; };
+		4596262A1D6A3E6E00B1C43E /* NewOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewOrderViewController.xib; sourceTree = "<group>"; };
+		4596262E1D6A3FDC00B1C43E /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		459626311D6A404E00B1C43E /* OrderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
+		459626341D6A42F000B1C43E /* UIAlertController+OrderUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+OrderUp.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,9 @@
 		459626071D6A210600B1C43E /* OrderUp */ = {
 			isa = PBXGroup;
 			children = (
+				459626331D6A42C800B1C43E /* Extensions */,
+				459626301D6A403A00B1C43E /* Utilities */,
+				4596262D1D6A3FC100B1C43E /* Models */,
 				459626081D6A210600B1C43E /* AppDelegate.swift */,
 				459626221D6A398D00B1C43E /* APIKeys.swift */,
 				4596261C1D6A251100B1C43E /* Screens */,
@@ -89,6 +102,7 @@
 		4596261C1D6A251100B1C43E /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				459626281D6A3E5300B1C43E /* NewOrder */,
 				4596261D1D6A252E00B1C43E /* Orders */,
 			);
 			path = Screens;
@@ -102,6 +116,39 @@
 				4596261F1D6A258B00B1C43E /* OrderTableViewCell.xib */,
 			);
 			path = Orders;
+			sourceTree = "<group>";
+		};
+		459626281D6A3E5300B1C43E /* NewOrder */ = {
+			isa = PBXGroup;
+			children = (
+				459626291D6A3E6E00B1C43E /* NewOrderViewController.swift */,
+				4596262A1D6A3E6E00B1C43E /* NewOrderViewController.xib */,
+			);
+			path = NewOrder;
+			sourceTree = "<group>";
+		};
+		4596262D1D6A3FC100B1C43E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4596262E1D6A3FDC00B1C43E /* Order.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		459626301D6A403A00B1C43E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				459626311D6A404E00B1C43E /* OrderManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		459626331D6A42C800B1C43E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				459626341D6A42F000B1C43E /* UIAlertController+OrderUp.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		ED3B8D41152DE3F7E6CFFE79 /* Pods */ = {
@@ -178,6 +225,7 @@
 				459626121D6A210600B1C43E /* Assets.xcassets in Resources */,
 				459626211D6A258B00B1C43E /* OrderTableViewCell.xib in Resources */,
 				459626101D6A210600B1C43E /* Main.storyboard in Resources */,
+				4596262C1D6A3E6E00B1C43E /* NewOrderViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,8 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				459626351D6A42F000B1C43E /* UIAlertController+OrderUp.swift in Sources */,
+				4596262F1D6A3FDC00B1C43E /* Order.swift in Sources */,
+				4596262B1D6A3E6E00B1C43E /* NewOrderViewController.swift in Sources */,
 				459626201D6A258B00B1C43E /* OrderTableViewCell.swift in Sources */,
 				4596260B1D6A210600B1C43E /* OrdersViewController.swift in Sources */,
+				459626321D6A404E00B1C43E /* OrderManager.swift in Sources */,
 				459626231D6A398D00B1C43E /* APIKeys.swift in Sources */,
 				459626091D6A210600B1C43E /* AppDelegate.swift in Sources */,
 			);

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yjh-BS-e2t">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yhN-JV-gBQ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Orders View Controller-->
+        <!--Current Orders-->
         <scene sceneID="r8X-AL-BYv">
             <objects>
-                <viewController id="Yjh-BS-e2t" customClass="OrdersViewController" customModule="OrderUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Yjh-BS-e2t" customClass="OrdersViewController" customModule="OrderUp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bPQ-8x-vFu"/>
                         <viewControllerLayoutGuide type="bottom" id="Dvg-KJ-hxL"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bRu-lt-mqh">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Yjh-BS-e2t" id="nmJ-hZ-edz"/>
@@ -28,17 +28,42 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="bRu-lt-mqh" firstAttribute="top" secondItem="bPQ-8x-vFu" secondAttribute="bottom" id="CPA-WT-HJz"/>
                             <constraint firstAttribute="trailing" secondItem="bRu-lt-mqh" secondAttribute="trailing" id="EbC-tj-6aU"/>
-                            <constraint firstItem="bRu-lt-mqh" firstAttribute="top" secondItem="bPQ-8x-vFu" secondAttribute="bottom" id="HVc-Z3-WCD"/>
                             <constraint firstItem="Dvg-KJ-hxL" firstAttribute="top" secondItem="bRu-lt-mqh" secondAttribute="bottom" id="Maw-HF-3S7"/>
                             <constraint firstItem="bRu-lt-mqh" firstAttribute="leading" secondItem="brS-mJ-psQ" secondAttribute="leading" id="tg5-zz-SAx"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Current Orders" id="tDw-Hw-F6j">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="IWz-t5-Xgg">
+                            <connections>
+                                <action selector="addOrderButtonTapped" destination="Yjh-BS-e2t" id="7qa-AN-xZH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="bRu-lt-mqh" id="XwM-xk-pcz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLI-PY-yTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798" y="50"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BO5-MJ-sNa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yhN-JV-gBQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vra-0b-dt4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Yjh-BS-e2t" kind="relationship" relationship="rootViewController" id="znN-o9-acF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n5C-kT-xEa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-14" y="50"/>
         </scene>

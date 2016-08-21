@@ -9,24 +9,22 @@
 import UIKit
 import Alamofire
 
+protocol OrderTableViewCellDelegate: class {
+    func doneButtonTapped(sender: OrderTableViewCell)
+}
+
 class OrderTableViewCell: UITableViewCell {
     
-    // 7323202909
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var phoneNumberLabel: UILabel!
+    weak var delegate: OrderTableViewCellDelegate?
+    
     @IBAction func doneButtonTapped() {
-        let user = kTwilioUserKey
-        let password = kTwilioPassword
-        let bodyText = "Your order is now ready for pick-up.  Come and get it!"
-        let parameters = ["To" : "7323202909", "From": "+12012317077", "Body" : bodyText]
-        
-        Alamofire.request(.POST, "https://api.twilio.com/2010-04-01/Accounts/ACaface08c72cda73db90ab8969197b66a/Messages.json", parameters: parameters)
-            .authenticate(user: user, password: password)
-            .responseJSON { response in
-                if let error = response.result.error {
-                    // error sending text
-                } else {
-                    // success
-                }
-                debugPrint(response)
-        }
+        delegate?.doneButtonTapped(self)
+    }
+    
+    func configureWithOrder(order: Order) {
+        nameLabel.text = order.name
+        phoneNumberLabel.text = order.phoneNumber
     }
 }

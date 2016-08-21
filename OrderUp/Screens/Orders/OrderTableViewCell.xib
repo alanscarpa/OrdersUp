@@ -46,6 +46,10 @@
                     <constraint firstItem="1tu-K5-6cg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="x42-e2-uC4"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="xVr-e3-rek" id="zrH-im-8Mq"/>
+                <outlet property="phoneNumberLabel" destination="f1P-de-gA8" id="8t9-qX-Faw"/>
+            </connections>
             <point key="canvasLocation" x="349.5" y="375"/>
         </tableViewCell>
     </objects>
